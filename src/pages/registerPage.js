@@ -6,14 +6,11 @@ function RegisterPage() {
 
   async function register(ev) {
     ev.preventDefault();
-    const response = await fetch(
-      "https://api-hazel-omega.vercel.app/register",
-      {
-        method: "POST",
-        body: JSON.stringify({ username, password }),
-        headers: { "Content-Type": "application/json" },
-      }
-    );
+    const response = await fetch("https://api-beta-amber.vercel.app/register", {
+      method: "POST",
+      body: JSON.stringify({ username, password }),
+      headers: { "Content-Type": "application/json" },
+    });
     if (response.status===200){
       alert('registeration successful')
     }else{

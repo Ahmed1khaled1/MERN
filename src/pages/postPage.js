@@ -22,7 +22,7 @@ function PostPage() {
 
       <div>
         <img
-          src={`https://api-hazel-omega.vercel.app/${postInfo.cover}`}
+          src={`https://api-beta-amber.vercel.app/${postInfo.cover}`}
           alt=""
         />
       </div>
