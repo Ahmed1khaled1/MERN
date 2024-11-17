@@ -6,7 +6,7 @@ import { UserContext } from "./userContext";
 function Header() {
   const {setUserInfo,userInfo} = useContext(UserContext)
   useEffect(() => {
-    fetch("http://localhost:4000/profile", {
+    fetch("https://api-hazel-omega.vercel.app/profile", {
       credentials: "include",
     }).then((response) => {
       response.json().then((userInfo) => {
@@ -15,7 +15,7 @@ function Header() {
     });
   }, []);
 function logout(){
-  fetch("http://localhost:4000/logout", {
+  fetch("https://api-hazel-omega.vercel.app/logout", {
     credentials: "include",
     method: "POST",
   });

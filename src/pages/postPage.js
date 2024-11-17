@@ -21,7 +21,10 @@ function PostPage() {
       </div>
 
       <div>
-        <img src={`http://localhost:4000/${postInfo.cover}`} alt="" />
+        <img
+          src={`https://api-hazel-omega.vercel.app/${postInfo.cover}`}
+          alt=""
+        />
       </div>
       <div dangerouslySetInnerHTML={{ __html: postInfo.content }} />
     </div>

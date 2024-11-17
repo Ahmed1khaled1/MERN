@@ -6,7 +6,7 @@ function Post({ _id, title, summary, content, cover, createdAt, author }) {
     <div className="grid grid-cols-5 gap-5 mb-10">
       <div className="col-span-2">
         <Link to={`/post/${_id}`}>
-          <img src={"http://localhost:4000/" + cover} alt="" />
+          <img src={"https://api-hazel-omega.vercel.app/" + cover} alt="" />
         </Link>
       </div>
       <div className="col-span-3">
